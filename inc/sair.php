@@ -1,0 +1,1 @@
+<?php Ambiente::logout(); ?>

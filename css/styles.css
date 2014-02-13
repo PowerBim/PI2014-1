@@ -1,0 +1,92 @@
+*{margin:0; padding:0;}
+
+html {overflow-y: scroll;}
+body {color:#000; height:100%; line-height: 100%;}
+body, input, textarea {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+img {border:0; vertical-align:top;}
+a {color:inherit; text-decoration:none;}
+a:hover {text-decoration:none;}
+:focus {outline:0;}
+
+html, #wrapper {height:100%;}
+
+body > #wrapper {height:auto; min-height:100%; margin:0;}
+
+/* CLEAR FIX*/
+.clearfix:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix {display:inline-block;}
+
+/* Hides from IE-mac \*/
+*html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */
+
+.left {float:left;} .right {float:right;} .clear {clear:both;} .show{display: block;} .hide{display: none;}
+
+p {color:#6d7073;}
+
+ul, li {list-style:none;} fieldset {border:0;} textarea {resize:none;}
+
+h1, h2, h3, h4, h5, h6 {line-height: 100%;}
+
+form *, form *:before, form *:after, .sidebar, .content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+form span {float:left; width: auto; white-space:nowrap; height: 22px; line-height: 22px; margin: 3px 10px 0 0;}
+form span.front {margin: 3px 10px 0 20px;}
+
+table {border-collapse: collapse; width: 100%; font-size:12px; border:0;}
+table tr:nth-child(odd) {background: #ddd;}
+table tr:nth-child(even) {background: #eee;}
+table tr th {background: #ccc; padding: 10px 5px; text-transform: uppercase;}
+table tr td {border:1px #ccc solid; padding: 5px 5px; background: #fff;}
+
+label {float:left; display: block; min-height: 22px; line-height: 22px; margin: 3px 0;}
+input, select {float:left; display: block; border:1px #ccc solid; height: 22px; line-height: 22px; margin: 3px 0;}
+input[readonly=readonly] {background:#ddd;}
+input[type=radio]{width: auto !important;}
+
+.wrap {margin: 20px;}
+
+.topo {padding: 10px 20px; height: 100px; overflow: hidden; background: #ddd;}
+.topo .logo {background: url(../images/logo.png); display: block; width: 183px; height: 100px; float:left;}
+
+.menu {overflow: hidden; background: #fff; border-bottom:1px #ccc solid;}
+.menu ul {margin: 0 10px;}
+.menu li {float:left; height: 30px; line-height: 30px;}
+.menu li a {padding: 0 5px; display: block; color:#666;}
+.menu li a:hover {background: #ccc; text-decoration: none; color:#000;}
+.menu li .sub {display: none; position: absolute; background: #fff; border:1px #ccc solid; margin: 0;}
+.menu li .sub ul {margin: 0;}
+.menu li .sub li {display: block; clear: both; width: 100%;}
+.menu li .sub li a {padding: 0 10px; display: block; border-top:1px #ccc solid;}
+.menu li:hover > a {background: #ccc;}
+.menu li:hover .sub {display: block; z-index: 10;}
+
+.login {border:1px #ccc solid; width: 400px; margin: 50px auto 0; overflow: hidden; background: #eee;}
+.login form {margin: 20px; overflow: hidden;}
+.login label {width: 15%; text-align: right; margin: 3px 3% 3px 0;}
+.login input {width: 80%;}
+.login #enviar {width: 70px; float:right; margin: 20px 1.5% 0 0;}
+
+.listagem {position: relative;}
+.listagem h2 {padding: 0 0 15px; border-bottom:2px #ccc groove; margin: 0 0 20px;}
+.listagem .buttons {position: absolute; top:0; right:0;}
+.listagem .buttons input, .listagem .buttons select {float:left; margin: 0 0 0 10px; padding: 0 5px;}
+.listagem .buttons input:hover {background: #ccc; cursor:pointer;}
+
+.manutencao {overflow: hidden;}
+.manutencao .sidebar {float:left; width: 20%; padding: 20px; border-top:1px #ccc solid; border-left:1px #ccc solid; border-bottom:1px #ccc solid;}
+.manutencao .content {float:right; width: 80%; padding: 20px; border:1px #ccc solid;}
+.manutencao .content fieldset {padding: 15px; border:1px #ccc solid; overflow: hidden; margin: 20px 0 0;}
+.manutencao .content label {width: 20%; clear:left;}
+.manutencao .content input, .manutencao .content select {width: 80%; padding: 0 5px;}
+.manutencao .content select {padding: 0;}
+
+.msg_sys{width: 100%; padding: 15px 20px; display: block; border: 1px solid #cccccc; margin: 0 0 20px; font-size: 16px; line-height: 16px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.sucesso{border-left: 5px solid #339900; background-color: #ccffcc;}
+.alerta{border-left: 5px solid #eeee00; background-color: #fdffd0;}
+.erro{border-left: 5px solid #d50000; background-color: #ffd0d0;}
+
